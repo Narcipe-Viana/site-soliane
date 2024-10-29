@@ -71,15 +71,15 @@ p {
     
     .social-icons {
         position: fixed;
-        bottom: 20px; /* Ajuste conforme necessário */
-        right: 20px;  /* Ajuste conforme necessário */
+        bottom: 47px;
+        right: 20px;
         display: flex;
         flex-direction: column;
-        gap: 15px;    /* Aumenta o espaçamento entre os ícones */
+        gap: 29px;
     }
     
     .icon {
-        font-size: 22px;               /* Ajuste o tamanho conforme necessário */
+        font-size: 31px;               /* Ajuste o tamanho conforme necessário */
         color: white;                  /* Cor do ícone */
         background-color: #edd8b9;     /* Cor de fundo */
         border-radius: 100%;            /* Arredondar os cantos */
@@ -138,21 +138,19 @@ p {
         justify-content: center;
       }
   
-      /* Layout para mobile */
       .menu-mobile {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px;
-      }
+        padding: 8px 28px;
+    }
   
       /* Ícone do menu para mobile */
       .menu-icon {
-        font-size: 20px;
+        font-size: 26px;
         cursor: pointer;
         transition: transform 0.3s;
-      }
-  
+    }
       /* Estilos para abrir o menu no mobile */
       .menu-items {
         display: none;
