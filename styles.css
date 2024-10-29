@@ -33,14 +33,11 @@ p {
 .services-img{
     border-radius: 7px;
 }
-.servicos {
-    border-bottom: solid 1px #e7e7e7;
-    background-image: url('fundo.png');
-    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    background-position: center; /* Centraliza a imagem no elemento */
-    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 7%), 0 -1px 2px 0 rgb(0 0 0 / 9%);
 
+.quem-sou{
+    border-top: solid 5px #f7e7cf;
+    background: #f3eeed61;
+    border-bottom: solid 1px #f7e7cf7d;
 }
 
 .quem-sou .galeria .localizacao
@@ -64,3 +61,162 @@ p {
         text-align: center;
         color: #4b4b4b;
     }
+    @keyframes shake {
+        0% { transform: translateY(0); }
+        25% { transform: translateY(-5px); }
+        50% { transform: translateY(0); }
+        75% { transform: translateY(5px); }
+        100% { transform: translateY(0); }
+    }
+    
+    .social-icons {
+        position: fixed;
+        bottom: 20px; /* Ajuste conforme necessário */
+        right: 20px;  /* Ajuste conforme necessário */
+        display: flex;
+        flex-direction: column;
+        gap: 15px;    /* Aumenta o espaçamento entre os ícones */
+    }
+    
+    .icon {
+        font-size: 22px;               /* Ajuste o tamanho conforme necessário */
+        color: white;                  /* Cor do ícone */
+        background-color: #edd8b9;     /* Cor de fundo */
+        border-radius: 100%;            /* Arredondar os cantos */
+        padding: 10px;                 /* Espaçamento interno para o ícone */
+        transition: transform 0.3s;
+        display: flex;                 /* Centraliza o ícone dentro do fundo */
+        justify-content: center;       /* Centraliza horizontalmente */
+        align-items: center;           /* Centraliza verticalmente */
+        animation: shake 1.5s infinite; /* Adiciona a animação */
+    }
+    
+    .icon:hover {
+        transform: scale(1.1); /* Efeito de hover */
+    }
+    .quem-sou-eu-2{
+        border-top: solid 5px #f7e7cf;
+    background: #f4eeed7d;
+    border-bottom: solid 1px #f7e7cf7d;
+    padding-top: 0px!important;
+    }
+    .margem_imagem_2{
+        margin-bottom: 20px;
+    }
+
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+        border-radius: 20px;
+        border: solid 1px #ffc1357d;
+    }
+
+
+    
+    /* Menu fixo */
+    .menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #ffffff;
+        color: #ecdbaed6;
+        z-index: 1000;
+    }
+  
+      /* Links do menu */
+      .menu a {
+        display: inline-block;
+        color: #898989;
+        text-decoration: none;
+        padding: 15px 20px;
+    }
+      /* Layout para desktop */
+      .menu-desktop {
+        display: none;
+        justify-content: center;
+      }
+  
+      /* Layout para mobile */
+      .menu-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+      }
+  
+      /* Ícone do menu para mobile */
+      .menu-icon {
+        font-size: 20px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+  
+      /* Estilos para abrir o menu no mobile */
+      .menu-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        padding-top: 20px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+  
+      /* Mostrar o menu no mobile ao clicar */
+      .menu-items.show {
+        display: flex;
+      }
+  
+      /* Esconder logo e mudar ícone para 'X' quando o menu está aberto */
+      .menu-mobile.open .logo {
+        display: none;
+      }
+      .menu-mobile.open .menu-icon {
+        transform: rotate(45deg);
+      }
+      .menu-mobile.open .menu-icon:before {
+        content: "\f00d"; /* Ícone de 'X' */
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+      }
+  
+      /* Responsividade */
+      @media (min-width: 768px) {
+        .menu-mobile {
+          display: none;
+        }
+        .menu-desktop {
+          display: flex;
+        }
+      }
+  
+      /* Conteúdo para teste de scroll */
+      .content {
+        margin-top: 70px;
+        padding: 20px;
+        height: 2000px;
+        background-color: #f4f4f4;
+      }
+
+
+      /* Estilos básicos da div */
+.animated-div {
+    opacity: 0;
+    transform: translateX(-100%); /* Esconde a div na lateral esquerda */
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* Classe que é adicionada quando a div está visível */
+  .animated-div.show {
+    opacity: 1;
+    transform: translateX(0); /* Move a div para a posição normal */
+  }
+  .margem-horario{
+    padding-top: 30px;
+    
+  }
+  
