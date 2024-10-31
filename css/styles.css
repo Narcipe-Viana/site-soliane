@@ -11569,3 +11569,8 @@ textarea.form-control-lg {
   --bs-bg-opacity: 1;
   background-color: rgb(250 247 246) !important;
 }
+@media (min-width: 800px) {
+  .ajuste-desktop{
+    padding: 50px 0px;
+  }
+}
