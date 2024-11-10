@@ -81,7 +81,7 @@ p {
     .icon {
         font-size: 31px;               /* Ajuste o tamanho conforme necessário */
         color: white;                  /* Cor do ícone */
-        background-color: #edd8b9;     /* Cor de fundo */
+        background-color: #ffc107;     /* Cor de fundo */
         border-radius: 100%;            /* Arredondar os cantos */
         padding: 10px;                 /* Espaçamento interno para o ícone */
         transition: transform 0.3s;
